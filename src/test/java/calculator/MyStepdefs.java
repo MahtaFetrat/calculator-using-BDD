@@ -12,6 +12,7 @@ public class MyStepdefs {
     private int value1;
     private int value2;
     private int intResult;
+    private double doubleResult;
 
     @Before
     public void before() {
@@ -29,9 +30,25 @@ public class MyStepdefs {
         intResult = (int) calculator.mult(value1, value2);
     }
 
+    @When("^I divide the two values$")
+    public void iDivideTheTwoValues() {
+        doubleResult = calculator.div(value1, value2);
+    }
+
+    @When("^I power the two values$")
+    public void iPowerTheTwoValues() {
+        doubleResult = calculator.pow(value1, value2);
+    }
+
     @Then("^I expect the integer result (-?\\d+)$")
     public void iExpectTheIntegerResult(int arg0) {
         Assert.assertEquals(intResult, arg0);
 
+    }
+
+
+    @Then("^I expect the double result (-?\\d+\\.\\d+)$")
+    public void iExpectTheDoubleResult(double arg0) {
+        Assert.assertEquals(doubleResult, arg0, 0.00001);
     }
 }
