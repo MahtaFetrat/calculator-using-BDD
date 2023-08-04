@@ -11,44 +11,38 @@ public class MyStepdefs {
     private Calculator calculator;
     private int value1;
     private int value2;
-    private int intResult;
-    private double doubleResult;
+
+    private String operation;
+    private double result;
 
     @Before
     public void before() {
         calculator = new Calculator();
     }
 
-    @Given("^Two input values, (-?\\d+) and (-?\\d+)$")
-    public void twoInputValuesAnd(int arg0, int arg1) {
+    @When("^I operate on the two values$")
+    public void iOperateOnTheTwoValues() {
+        try {
+            result = calculator.operate(value1, value2, operation);
+        } catch (Exception e) {
+            System.out.println(e.getMessage());
+        }
+    }
+
+    @Then("^I expect the result (-?\\d+)$")
+    public void iExpectTheResult(int arg0) {
+        Assert.assertEquals(result, arg0, 0.00001);
+    }
+
+    @Then("^I expect the result (-?\\d+\\.\\d+)$")
+    public void iExpectTheResult(double arg0) {
+        Assert.assertEquals(result, arg0, 0.00001);
+    }
+
+    @Given("^Two input values, (-?\\d+) and (-?\\d+), and operation ([*/^])$")
+    public void twoInputValuesFirstAndSecondAndOperation(int arg0, int arg1, String operation0) {
         value1 = arg0;
         value2 = arg1;
-    }
-
-    @When("^I multiply the two values$")
-    public void iMultiplyTheTwoValues() {
-        intResult = (int) calculator.mult(value1, value2);
-    }
-
-    @When("^I divide the two values$")
-    public void iDivideTheTwoValues() {
-        doubleResult = calculator.div(value1, value2);
-    }
-
-    @When("^I power the two values$")
-    public void iPowerTheTwoValues() {
-        doubleResult = calculator.pow(value1, value2);
-    }
-
-    @Then("^I expect the integer result (-?\\d+)$")
-    public void iExpectTheIntegerResult(int arg0) {
-        Assert.assertEquals(intResult, arg0);
-
-    }
-
-
-    @Then("^I expect the double result (-?\\d+\\.\\d+)$")
-    public void iExpectTheDoubleResult(double arg0) {
-        Assert.assertEquals(doubleResult, arg0, 0.00001);
+        operation = operation0;
     }
 }
