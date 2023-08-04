@@ -84,14 +84,17 @@
 ![maven-28](https://github.com/MahtaFetrat/calculator-using-BDD/assets/62302965/7de356f1-9ae3-484a-aa8d-e0eafa021c73)
 
 ۱۵- حال می‌خواهیم مراحل این مستند را برای پروژه‌ی خواسته‌شده انجام بدهیم. به این منظور، سناریو‌های تست را به دو صورت عادی و outline می‌نویسیم:
-![image](https://github.com/MahtaFetrat/calculator-using-BDD/assets/24840082/e40edb67-7a0a-4eae-9181-cb85d04a50f2)
-![image](https://github.com/MahtaFetrat/calculator-using-BDD/assets/24840082/9e065187-dbd9-45b0-a4ad-7d8de829bac9)
+
+![image](https://github.com/MahtaFetrat/calculator-using-BDD/assets/62302965/40ec55ca-d43c-45a7-be9a-00e8b1121328)
 
 ۱۶- حال این سناریوها را به تعریف گام‌ها تبدیل می‌کنیم. همچنین چون در تقسیم و توان، خروجی اعشاری نیز ممکن است باید دو حالت خروجی صحیح و اعشاری را در نظر بگیریم:
-![image](https://github.com/MahtaFetrat/calculator-using-BDD/assets/24840082/b9b95b3e-dc10-4a8f-9da2-9183f3392c7a)
+
+![image](https://github.com/MahtaFetrat/calculator-using-BDD/assets/62302965/ee38d510-9e24-476a-b635-711f4b8d03cb)
+
 
 ۱۷- کد اصلی ماشین‌حساب نیز به این صورت است:
-![image](https://github.com/MahtaFetrat/calculator-using-BDD/assets/24840082/87ce3065-8f50-446e-8b42-d894e306d0b3)
+![image](https://github.com/MahtaFetrat/calculator-using-BDD/assets/62302965/e09857e4-6f92-4a61-b67c-2b2cf998b57a)
+
 
 ۱۸- حال همه تست‌ها را اجرا می‌کنیم تا از درستی برنامه مطمئن شویم:
-![image](https://github.com/MahtaFetrat/calculator-using-BDD/assets/24840082/83770a40-26a9-4078-b01a-2664c7e588fa)
+![image](https://github.com/MahtaFetrat/calculator-using-BDD/assets/62302965/f388d74a-f33a-42ba-baa4-afe09ce2b867)
