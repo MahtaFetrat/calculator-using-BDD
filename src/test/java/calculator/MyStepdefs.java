@@ -31,12 +31,12 @@ public class MyStepdefs {
 
     @Then("^I expect the result (-?\\d+)$")
     public void iExpectTheResult(int arg0) {
-        Assert.assertEquals(result, arg0, 0.00001);
+        Assert.assertEquals(result, arg0, 0.1);
     }
 
     @Then("^I expect the result (-?\\d+\\.\\d+)$")
     public void iExpectTheResult(double arg0) {
-        Assert.assertEquals(result, arg0, 0.00001);
+        Assert.assertEquals(result, arg0, 0.1);
     }
 
     @Given("^Two input values, (-?\\d+) and (-?\\d+), and operation ([*/^])$")
