@@ -89,7 +89,7 @@
 
 ۱۶- حال این سناریوها را به تعریف گام‌ها تبدیل می‌کنیم. همچنین چون در تقسیم و توان، خروجی اعشاری نیز ممکن است باید دو حالت خروجی صحیح و اعشاری را در نظر بگیریم:
 
-![image](https://github.com/MahtaFetrat/calculator-using-BDD/assets/62302965/ee38d510-9e24-476a-b635-711f4b8d03cb)
+![image](https://github.com/MahtaFetrat/calculator-using-BDD/assets/62302965/1ab6546c-df1f-4376-96b8-9ee1e371dbea)
 
 
 ۱۷- کد اصلی ماشین‌حساب نیز به این صورت است:
@@ -97,4 +97,6 @@
 
 
 ۱۸- حال همه تست‌ها را اجرا می‌کنیم تا از درستی برنامه مطمئن شویم:
-![image](https://github.com/MahtaFetrat/calculator-using-BDD/assets/62302965/f388d74a-f33a-42ba-baa4-afe09ce2b867)
+
+![image](https://github.com/MahtaFetrat/calculator-using-BDD/assets/62302965/efc910c8-6a45-4769-8b62-79266e8ca2dc)
+
